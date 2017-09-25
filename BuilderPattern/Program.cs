@@ -201,7 +201,7 @@ namespace BuilderPattern
 
             public void AddConnectivity()
             {
-                Phone.Connectivity = Connectivity.CDMA.ToString();
+                Phone.Connectivity = string.Format("{0},{1},{2}",Connectivity.CDMA.ToString(), Connectivity.GSM.ToString(), Connectivity.LTE.ToString());
             }
 
             public void AddCamera()
